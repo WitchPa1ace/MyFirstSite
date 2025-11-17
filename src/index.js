@@ -1,2 +1,2 @@
-import "../index.css"
+import "./index.css"
 const a = 6;

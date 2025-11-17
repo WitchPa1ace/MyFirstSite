@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default {
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/app.tsx",
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
