@@ -7,69 +7,7 @@
     <title>Мой сайт</title>
 </head>
 <body class="bg-red-500">
-    <button class="theme-toggle" onclick="toggleTheme()">Тёмная тема</button>
-    
-    <h1 style="font-family:arial; text-align:center;">Есимбеков Чингис!!!!</h1>
-    <p style="font-family:courier; font-size:200%;">4 Курс | 8121-22</p>
-    <p style="font-family:courier; font-size:200%;">Бюджет, 22 года (31.08.2003), Пересдаю вождение</p>
-    <p style="font-family:arial; text-align:center;">Social Links: <a href="https://vk.com/witch_pa1ace">VK</a>, <a href="https://github.com/WitchPa1ace">Github</a>, Steam, Discord, <a href="https://www.reddit.com/user/WitchPa1ace/">Reddit</a></p>
-    <button style="width:20;height:20;" onclick="ScriptQuote()">Кнопка с Цитатой</button>
-    <button style="width:20;height:20;" onclick="openModal()">Вызвать модальное окно</button>
-    <br><br><br><br><br><br>
-    <!-- <p style="color:red;font-size:400%;">Я САЙТ И Я РЫДАЮ, ВЕДЬ МЕНЯ НАПИСАЛИ БЕЗ ИСПОЛЬЗОВАНИЯ CSS</p> -->
-    <!-- <div id="buttons-container"></div> -->
-    <div class="modal" id="myModal">
-        <div class="modalwrap">
-            <div class="modalwindow">
-                <div class="crossbutton">
-                    <button onclick="closeModal()" class="crossbutton">
-                        <img class="button_image" src="crossbutton.png " />
-                    </button>
-                </div>
-                <h1>Невероятно!</h1>
-                <p>По вторникам сайт не работает</p>
-                <p>Кто бы мог подумать!</p>
-            </div>
-        </div>
-    </div>
-    <script>
-        const overlay = document.getElementById("myModal");
-    function ScriptQuote(){
-    alert('СЕГОДНЯ БЫЛО ЗАВТРА ВЧЕРА');
-    }
-    function openModal() {
-            overlay.style.display = 'flex';
-        }
-        
-    function closeModal() {
-        
-            overlay.style.display = 'none';
-        }
-    overlay.addEventListener('click', function(e) {
-        if (e.target === overlay) {
-            console.log("in modal")
-            closeModal();
-        }
-        console.log("not in modal")
-                
-        })
-    function toggleTheme() {
-            document.body.classList.toggle('dark-theme');
-            const themeButton = document.querySelector('.theme-toggle');
-            if (document.body.classList.contains('dark-theme')) {
-                themeButton.textContent = 'Светлая тема';
-            } else {
-                themeButton.textContent = 'Тёмная тема';
-            }
-        }
-    document.addEventListener('DOMContentLoaded', function() {
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    closeModal();
-                }
-            });
-        });    
-    </script>
+    <div id="root"></div>
 </body>
 
 </html>
